@@ -4,6 +4,7 @@ This project implements a deep learning model using PyTorch to classify gravitat
 1. **No Substructure**: Strong lensing images with smoothed mass profiles.
 2. **Subhalo Substructure**: Lensing images with subhalo perturbations.
 3. **Vortex Substructure**: Lensing images with vortex perturbations.
+
 The model used is a modified ResNet-18 (Residual Network with 18 layers), a convolutional neural network (CNN) that uses "skip connections" or "shortcuts" to jump over some layers, helping avoid the vanishing gradient problem, making deeper training possible. More about the model, see: 
 👉 [Model Architecture](model_architecture.md)
 
