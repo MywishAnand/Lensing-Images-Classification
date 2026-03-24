@@ -26,13 +26,6 @@ The dataset consists of normalized gravitational lensing images in the three cat
 - `best_model.pth`: Saved weights of the trained model.
 - `roc_curve.png`: ROC curves for the three classes.
 
-
-dataset.py: Custom PyTorch Dataset to load .npy images.
-model.py: ResNet18 model modified for 1-channel grayscale input and 3-class output.
-train.py: Script to train the model and save the best weights.
-evaluate.py: Script to evaluate the model on the validation set and generate ROC curves.
-requirements.txt: Python dependen
-
 ## Model Architecture
 
 For a detailed breakdown of the modified ResNet18 architecture, see:
