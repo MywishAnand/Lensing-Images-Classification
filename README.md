@@ -11,7 +11,7 @@ The model used is a modified ResNet-18 (Residual Network with 18 layers), a conv
 The weights of the best trained model are shared in this .pth file: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
 
 ## Dataset
-The dataset consists of normalized gravitational lensing images provided as `.npy` files.
+The dataset consists of normalized gravitational lensing images in the three categories, provided as `.npy` files.
 
 ## Project Structure
 - `dataset.py`: Custom PyTorch `Dataset` to load `.npy` images.
