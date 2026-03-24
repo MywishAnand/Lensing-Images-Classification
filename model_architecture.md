@@ -1,6 +1,6 @@
 # ResNet18 Model Architecture for Lens Classification
 
-![ResNet18 Architecture](/Users/mywishanand/.gemini/antigravity/brain/2431b64b-7287-4198-a30f-16ef34484f22/resnet18_lens_architecture_1774363053356.png)
+![ResNet18 Architecture](model_architecture.png)
 
 The model used is a modified **ResNet-18 (Residual Network with 18 layers)**. It is a convolutional neural network (CNN) that uses "skip connections" or "shortcuts" to jump over some layers, which helps avoid the vanishing gradient problem and allows for deeper training.
 
