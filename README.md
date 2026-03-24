@@ -6,7 +6,8 @@ This project implements a deep learning model using PyTorch to classify gravitat
 3. **Vortex Substructure**: Lensing images with vortex perturbations.
 
 The model used is a modified ResNet-18 (Residual Network with 18 layers), a convolutional neural network (CNN) that uses "skip connections" or "shortcuts" to jump over some layers, helping avoid the vanishing gradient problem, making deeper training possible. More about the model's architecture, see: 
-👉 [Model Architecture](model_architecture.md)
+👉 [Model Architecture](model_architecture.md) and what experiments I carried to achieve the project goals with it, see: 
+👉 [Experiments](experiments.md).
 
 The weights of the best trained model from this exercise are shared in the .pth file, here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
 
@@ -18,9 +19,19 @@ The dataset consists of normalized gravitational lensing images in the three cat
 - `model.py`: ResNet18 model modified for 1-channel grayscale input and 3-class output.
 - `train.py`: Script to train the model and save the best weights.
 - `evaluate.py`: Script to evaluate the model on the validation set and generate ROC curves.
+- `model_architecture.md`: Detailed description and mapping of the neural network.
+- `model_architecture.png`: Visual diagram of the ResNet-18 architecture.
+- `experiments.md`: Documentation of experimental hypothesis, tuning, and insights.
 - `requirements.txt`: Python dependencies.
 - `best_model.pth`: Saved weights of the trained model.
 - `roc_curve.png`: ROC curves for the three classes.
+
+
+dataset.py: Custom PyTorch Dataset to load .npy images.
+model.py: ResNet18 model modified for 1-channel grayscale input and 3-class output.
+train.py: Script to train the model and save the best weights.
+evaluate.py: Script to evaluate the model on the validation set and generate ROC curves.
+requirements.txt: Python dependen
 
 ## Model Architecture
 
