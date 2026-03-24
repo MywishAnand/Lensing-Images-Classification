@@ -48,3 +48,6 @@ The model achieves high AUC scores across all categories:
 - **Vortex Substructure**: ~0.972
 
 ![ROC Curve](roc_curve.png)
+
+## Trained Model Weights
+The weights of the best trained model for which I got the above results in validation can be downloaded from here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/view?usp=share_link 
