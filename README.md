@@ -17,6 +17,15 @@ The dataset consists of normalized gravitational lensing images provided as `.np
 - `best_model.pth`: Saved weights of the trained model.
 - `roc_curve.png`: ROC curves for the three classes.
 
+## Model Architecture
+
+For a detailed breakdown of the modified ResNet18 architecture, see:
+👉 [Model Architecture](model_architecture.md)
+
+## Best Model Weights
+
+Weights of the best trained model are shared in this .pth file: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
+
 ## Features
 - **Transfer Learning**: Uses a pre-trained ResNet18 backbone.
 - **Custom Input**: Adapted to handle single-channel `.npy` data.
