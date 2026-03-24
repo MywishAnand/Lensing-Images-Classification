@@ -35,6 +35,10 @@ For a detailed breakdown of the modified ResNet18 architecture, see:
 
 Weights of the best trained model from this exercise are shared in the .pth file, here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
 
+## Experiments & Workflow
+
+In the [experiments.md](experiments.md), I detail the strategic approach and steps I followed to achieve the multi-class gravitational lensing images classification. I elaborate upon the model design choices, baseline configuration, modifications, hyperparameter optimizations, training behavior, diagnostics and failure analysis.
+
 ## Features
 - **Transfer Learning**: Uses a pre-trained ResNet18 backbone.
 - **Custom Input**: Adapted to handle single-channel `.npy` data.
