@@ -1,8 +1,8 @@
-# Experiments & Hypothesis Testing: Gravitational Lens Classification
+# Experiments & Workflow: Gravitational Lens Classification
 
-This document provides an in-depth analysis of the experimental methodology, technical design decisions, and hyperparameter optimization strategies utilized to develop a high-performance classifier for gravitational lensing substructures.
+Here, I detail an in-depth analysis of the experimental methodology, technical design decisions, and hyperparameter optimization strategies utilized to develop a high-performance classifier for gravitational lensing substructures.
 
-## 1. Experiment Objective
+## 1. Project's Objective
 
 **Primary Goal**: To develop a robust deep learning model capable of distinguishing between three distinct classes of strong gravitational lensing: `no substructure`, `subhalo substructure`, and `vortex substructure`.
 
@@ -59,10 +59,10 @@ The "Baseline" serves as our control group. Any deviation is measured against th
 ## 5. Intentional Model Design Choices
 
 ### 1-Channel conv1 Adaptation
-Standard ResNet18 expects 3-channel RGB. Instead of simply duplicating our grayscale image three times (which increases memory overhead), we modified the `conv1` weight shape. We initialized the new 1-channel kernel using the mean of the original 3-channel weights, preserving the spatial feature extraction knowledge captured from ImageNet.
+Standard ResNet18 expects 3-channel RGB. Instead of simply duplicating our grayscale image three times (which increases memory overhead), I modified the `conv1` weight shape. I initialized the new 1-channel kernel using the mean of the original 3-channel weights, preserving the spatial feature extraction knowledge captured from ImageNet.
 
 ### Dropout & Regularization
-Early experiments showed a trend towards overfitting (Train Acc: 99.5%, Val Acc: 92%). We introduced a small Dropout (p=0.2) before the final `fc` layer to force feature redundancy.
+Early experiments showed a trend towards overfitting (Train Acc: 99.5%, Val Acc: 92%). I introduced a small Dropout (p=0.2) before the final `fc` layer to force feature redundancy.
 
 ---
 
