@@ -8,7 +8,7 @@ This project implements a deep learning model using PyTorch to classify gravitat
 The model used is a modified ResNet-18 (Residual Network with 18 layers), a convolutional neural network (CNN) that uses "skip connections" or "shortcuts" to jump over some layers, helping avoid the vanishing gradient problem, making deeper training possible. More about the model's architecture, see: 
 👉 [Model Architecture](model_architecture.md)
 
-The weights of the best trained model are shared in this .pth file: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
+The weights of the best trained model from this exercise are shared in the .pth file, here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
 
 ## Dataset
 The dataset consists of normalized gravitational lensing images in the three categories, provided as `.npy` files.
@@ -29,7 +29,7 @@ For a detailed breakdown of the modified ResNet18 architecture, see:
 
 ## Best Model Weights
 
-Weights of the best trained model are shared in this .pth file: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
+Weights of the best trained model from this exercise are shared in the .pth file, here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/ 
 
 ## Features
 - **Transfer Learning**: Uses a pre-trained ResNet18 backbone.
@@ -62,6 +62,3 @@ The model achieves high AUC scores across all categories:
 - **Vortex Substructure**: ~0.972
 
 ![ROC Curve](roc_curve.png)
-
-## Trained Model Weights
-The weights of the best trained model for which I got the above results in validation can be downloaded from here: https://drive.google.com/file/d/14g2wVViIA6Fc4Kh9NuC__pGCYg0tckrf/view?usp=share_link 
